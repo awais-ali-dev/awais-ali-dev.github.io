@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /404/
+Sitemap: https://awais-ali-dev.github.io/sitemap.xml

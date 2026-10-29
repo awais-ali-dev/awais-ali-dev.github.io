@@ -1,0 +1,332 @@
+[
+  {
+    "slug": "wazuh-endpoint-security-lab",
+    "title": "Making endpoint activity visible.",
+    "short": "Wazuh endpoint security lab",
+    "category": "security",
+    "type": "Security operations · Lab",
+    "year": "2026",
+    "featured": true,
+    "visual": "monitor",
+    "tags": [
+      "Wazuh",
+      "Ubuntu",
+      "MITRE ATT&CK"
+    ],
+    "intro": "A self-hosted monitoring lab that connects file changes and failed SSH logins to actionable security alerts.",
+    "context": "Security monitoring starts with understanding what an endpoint is doing. This lab explores that workflow in a controlled Ubuntu virtual machine.",
+    "role": "Cybersecurity internship project",
+    "approach": [
+      "Configured the Wazuh manager, indexer, and dashboard in an Ubuntu virtual environment.",
+      "Set up real-time file-integrity monitoring and tested file changes.",
+      "Simulated failed SSH logins, reviewed detection rules and MITRE ATT&CK mappings, and configured Postfix email alerts."
+    ],
+    "outcome": "The project documents an end-to-end monitoring and alerting workflow, from a controlled endpoint event to investigation in Wazuh.",
+    "limits": "Self-hosted training environment; this is not a claim of operating a production SOC.",
+    "repo": "wazuh-endpoint-security-lab"
+  },
+  {
+    "slug": "secure-file-sharing-e2ee",
+    "title": "Files encrypted before they leave.",
+    "short": "Encrypted file sharing",
+    "category": "development",
+    "type": "Application security · Prototype",
+    "year": "2026",
+    "featured": true,
+    "visual": "encryption",
+    "tags": [
+      "JavaScript",
+      "AES-256-GCM",
+      "AWS S3"
+    ],
+    "intro": "A file-sharing prototype exploring browser-side encryption, direct object storage transfers, and share-link key handling.",
+    "context": "Sharing a file should involve thinking about where its contents and keys travel. This prototype explores that boundary with encryption in the browser.",
+    "role": "Developer · Internship project",
+    "approach": [
+      "Implemented browser-side AES-256-GCM encryption for files and filenames.",
+      "Used S3 presigned URLs for direct uploads and downloads.",
+      "Passed decryption keys in URL fragments and implemented expiry and download-limit checks."
+    ],
+    "outcome": "A documented prototype joining client-side cryptography with a cloud storage workflow.",
+    "limits": "Educational prototype; no independent cryptographic audit or production-readiness claim. Sharing a complete link also shares access to its key.",
+    "repo": "secure-file-sharing-e2ee"
+  },
+  {
+    "slug": "disaster-sos-pakistan",
+    "title": "A connection when networks disappear.",
+    "short": "Disaster SOS Pakistan",
+    "category": "development",
+    "type": "Android · Offline proof of concept",
+    "year": "2026",
+    "featured": true,
+    "visual": "mesh",
+    "tags": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Nearby Connections"
+    ],
+    "intro": "An offline Android proof of concept for nearby SOS messages and GPS sharing during connectivity loss.",
+    "context": "Disasters can interrupt mobile and internet service. This project investigates local device-to-device communication when conventional connectivity is unavailable.",
+    "role": "Solo developer",
+    "approach": [
+      "Built an Android interface with Kotlin and Jetpack Compose.",
+      "Used Nearby Connections for local peer discovery and SOS/location messages.",
+      "Tested offline communication across two physical Android devices."
+    ],
+    "outcome": "A working proof of concept for local discovery and emergency-message exchange without internet access.",
+    "limits": "Research prototype, not an emergency service. Range, device compatibility, delivery, and availability are not guaranteed. Roadmap features are not presented as delivered.",
+    "repo": "disaster-sos-pakistan"
+  },
+  {
+    "slug": "aneurysm-detection",
+    "title": "Exploring AI that can explain itself.",
+    "short": "Medical imaging research",
+    "category": "ai",
+    "type": "Computer vision · Final-year project",
+    "year": "2025–2026",
+    "featured": true,
+    "visual": "vision",
+    "tags": [
+      "TensorFlow",
+      "ResNet-50",
+      "U-Net",
+      "Grad-CAM"
+    ],
+    "intro": "A team research prototype combining medical-image classification, segmentation, and visual explanations.",
+    "context": "My final-year project explored deep learning for intracranial aneurysm detection and the challenge of explaining a model's predictions.",
+    "role": "Co-developer · Team of three",
+    "approach": [
+      "Co-developed a ResNet-50 classification and U-Net segmentation pipeline.",
+      "Used Grad-CAM to visualize regions associated with model predictions.",
+      "Connected model inference to a Flask API and a React review interface."
+    ],
+    "outcome": "An academic research prototype spanning model development, explainability, and a web-based review workflow.",
+    "limits": "Academic research only, not a clinically validated diagnostic tool. Performance figures are omitted because the original evaluation report is not available in the supporting portfolio materials.",
+    "repo": null
+  },
+  {
+    "slug": "security-audit-juiceshop",
+    "title": "From a finding to a clear remediation.",
+    "short": "OWASP Juice Shop audit",
+    "category": "security",
+    "type": "Application security · Authorized lab",
+    "year": "2026",
+    "visual": "audit",
+    "tags": [
+      "OWASP ZAP",
+      "Docker",
+      "SQL injection",
+      "XSS"
+    ],
+    "intro": "A scoped security assessment of a deliberately vulnerable local application, with findings and remediation priorities.",
+    "context": "The exercise focuses on reproducing vulnerabilities and explaining their impact within a safe, intentionally vulnerable training environment.",
+    "role": "Security tester · Internship project",
+    "approach": [
+      "Ran OWASP Juice Shop locally with Docker and assessed it using OWASP ZAP.",
+      "Reproduced SQL injection authentication bypass and DOM-based XSS.",
+      "Reviewed token storage, headers, and CSRF behavior, separating confirmed findings from inconclusive tests."
+    ],
+    "outcome": "A documented assessment that distinguishes reproducible vulnerabilities from hardening observations and unconfirmed behavior.",
+    "limits": "Local OWASP Juice Shop only. No third-party production or staging systems are claimed as part of the authorized assessment.",
+    "repo": "security-audit-juiceshop"
+  },
+  {
+    "slug": "secure-auth-system",
+    "title": "Thinking through the sign-in boundary.",
+    "short": "Secure authentication system",
+    "category": "development",
+    "type": "Identity security · Prototype",
+    "year": "2026",
+    "visual": "encryption",
+    "tags": [
+      "Node.js",
+      "Express",
+      "OAuth 2.0",
+      "TOTP"
+    ],
+    "intro": "A Node.js authentication prototype combining Google sign-in, time-based second factors, and sensitive-field encryption.",
+    "context": "Authentication brings identity, sessions, and secrets together. This project explores those concerns through a small application prototype.",
+    "role": "Developer · Internship project",
+    "approach": [
+      "Integrated Google OAuth 2.0 using Passport.js.",
+      "Added TOTP two-factor verification.",
+      "Used AES-256-GCM to encrypt sensitive fields in a SQLite-backed application."
+    ],
+    "outcome": "A practical identity-flow prototype with documented implementation decisions.",
+    "limits": "A learning project, not a certified identity provider or independently audited authentication service.",
+    "repo": "secure-auth-system"
+  },
+  {
+    "slug": "azure-cloud-security-audit",
+    "title": "Understanding cloud controls in context.",
+    "short": "Azure security & WAF lab",
+    "category": "security",
+    "type": "Cloud security · Non-production lab",
+    "year": "2026",
+    "visual": "cloud",
+    "tags": [
+      "Azure",
+      "IAM / RBAC",
+      "Defender for Cloud",
+      "WAF"
+    ],
+    "intro": "An Azure security demonstration covering access boundaries, storage configuration, and web-application firewall setup.",
+    "context": "Cloud security controls need to be understood as part of a configuration, with clear scope and limitations.",
+    "role": "Cybersecurity internship project",
+    "approach": [
+      "Reviewed IAM, storage settings, and Defender for Cloud recommendations.",
+      "Applied resource-scoped access and configured geo-redundant storage.",
+      "Provisioned Application Gateway WAF_v2 with managed rules in detection mode."
+    ],
+    "outcome": "A non-production configuration exercise documenting cloud security controls and deployment constraints.",
+    "limits": "Detection mode with a placeholder backend. This project does not claim to have protected live production traffic.",
+    "repo": "azure-cloud-security-audit"
+  },
+  {
+    "slug": "cyber-incident-response-plan",
+    "title": "A clearer path from detection to recovery.",
+    "short": "Cyber incident response plan",
+    "category": "security",
+    "type": "Incident response · Tabletop exercise",
+    "year": "2026",
+    "visual": "response",
+    "tags": [
+      "Incident response",
+      "MITRE ATT&CK",
+      "NIST SP 800-61"
+    ],
+    "intro": "A documented response plan with responsibilities, escalation paths, and a ransomware tabletop scenario.",
+    "context": "An incident response plan should help people understand what to do and who is responsible before an incident occurs.",
+    "role": "Author · Internship project",
+    "approach": [
+      "Defined response stages, incident severity tiers, and a CSIRT responsibility matrix.",
+      "Mapped a ransomware tabletop scenario to MITRE ATT&CK.",
+      "Prepared security-awareness and staff-training materials."
+    ],
+    "outcome": "A structured set of procedures for a simulated incident lifecycle, from detection and containment to recovery.",
+    "limits": "Training and planning materials; no claim of responding to a real organizational ransomware incident.",
+    "repo": "cyber-incident-response-plan"
+  },
+  {
+    "slug": "phishing-simulation-security-awareness",
+    "title": "Learning from a controlled awareness test.",
+    "short": "Phishing awareness simulation",
+    "category": "security",
+    "type": "Security awareness · Controlled exercise",
+    "year": "2026",
+    "visual": "audit",
+    "tags": [
+      "GoPhish",
+      "Email security",
+      "Awareness"
+    ],
+    "intro": "A consent-based exercise using two self-owned email accounts to study delivery and spam-filter behavior.",
+    "context": "A small controlled test can reveal how an awareness exercise behaves without exposing unsuspecting people.",
+    "role": "Cybersecurity internship project",
+    "approach": [
+      "Configured a controlled GoPhish exercise using self-owned test accounts.",
+      "Observed message delivery and Gmail spam interception.",
+      "Documented the small sample and the limits of the results."
+    ],
+    "outcome": "A documented exercise in safe simulation design and communicating what the evidence can support.",
+    "limits": "Two self-owned addresses; results do not establish organization-wide click rates or awareness effectiveness.",
+    "repo": "phishing-simulation-security-awareness"
+  },
+  {
+    "slug": "facial-emotion-recognition",
+    "title": "An introduction to visual classification.",
+    "short": "Facial emotion recognition",
+    "category": "ai",
+    "type": "Computer vision · Team project",
+    "year": "2025",
+    "visual": "vision",
+    "tags": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "OpenCV"
+    ],
+    "intro": "A team-built CNN project for facial-expression classification with image preprocessing and command-line inference.",
+    "context": "This project provided practical experience with image handling, convolutional models, and inference workflows.",
+    "role": "Contributor · Team of three",
+    "approach": [
+      "Contributed to a CNN-based classification workflow in Python.",
+      "Used TensorFlow/Keras for model development and OpenCV for image handling.",
+      "Worked on a command-line inference workflow."
+    ],
+    "outcome": "A learning project connecting computer-vision preprocessing with model inference.",
+    "limits": "An educational classifier, not a reliable measure of a person's internal emotional state or a tool for consequential decisions.",
+    "repo": "Facial-Emotion-Recognition"
+  },
+  {
+    "slug": "spotify-clone",
+    "title": "A familiar interface, built component by component.",
+    "short": "React music player",
+    "category": "development",
+    "type": "Frontend · Learning project",
+    "year": "2025",
+    "visual": "music",
+    "tags": [
+      "React",
+      "Context API",
+      "JavaScript"
+    ],
+    "intro": "A Spotify-inspired frontend exploring reusable components, shared player state, and routing.",
+    "context": "The project uses a familiar music interface to practice frontend structure and interactive state management.",
+    "role": "Frontend developer",
+    "approach": [
+      "Built reusable album, song-list, and player components.",
+      "Managed shared playback state with React Context API.",
+      "Added route-based navigation and a modular project structure."
+    ],
+    "outcome": "A frontend learning project with a coherent browsing and playback interface.",
+    "limits": "Independent educational project, not affiliated with Spotify. Third-party names and content remain with their respective owners.",
+    "repo": "spotify-clone"
+  },
+  {
+    "slug": "personal-portfolio-2024",
+    "title": "An early step in building for the web.",
+    "short": "First personal portfolio",
+    "category": "development",
+    "type": "Web development · Archive",
+    "year": "2024",
+    "visual": "code",
+    "tags": [
+      "Web development",
+      "Portfolio"
+    ],
+    "intro": "An earlier portfolio repository documenting the start of my web-development journey.",
+    "context": "Kept as part of the project archive to show the progression from an early personal site to more focused technical work.",
+    "role": "Developer",
+    "approach": [
+      "Created an early personal portfolio website.",
+      "Maintained the project in a public GitHub repository."
+    ],
+    "outcome": "An archived example of earlier web work.",
+    "limits": "Historical project; current professional information is on this portfolio.",
+    "repo": "PersonalPortfolioWebsite"
+  },
+  {
+    "slug": "simple-quiz-java",
+    "title": "Practicing programming through a quiz.",
+    "short": "Java quiz application",
+    "category": "development",
+    "type": "Java · Archive",
+    "year": "2024",
+    "visual": "code",
+    "tags": [
+      "Java",
+      "Programming fundamentals"
+    ],
+    "intro": "An early Java quiz repository from my programming-learning journey.",
+    "context": "An introductory project preserved alongside later security, software, and AI work.",
+    "role": "Developer",
+    "approach": [
+      "Built an introductory quiz project in Java.",
+      "Published the source in a dedicated GitHub repository."
+    ],
+    "outcome": "An archived programming exercise.",
+    "limits": "Descriptions are limited to the supplied repository listing; additional implementation details have not been verified.",
+    "repo": "Simple_Quiz_Java"
+  }
+]
